@@ -1,0 +1,95 @@
+.cookie-accept-block {
+  width: 100%;
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  bottom: -1000px;
+}
+
+.cookie-accept-block__desc {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+.cookie-accept-block__link {
+  color: #ff5959;
+}
+.cookie-accept-block__link:hover {
+  color: #ff3636;
+}
+
+.cookie-accept-block__btn {
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 99px;
+  background: #ff5959;
+  color: white;
+  padding: 1em 1.5em;
+  display: inline-block;
+  width: 200px;
+  margin-top: 1em;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cookie-accept-block__btn:focus {
+  outline: none;
+}
+.cookie-accept-block__btn:hover {
+  background: #ff3636;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .cookie-accept-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px 20px;
+  }
+
+  .cookie-accept-block__desc {
+    max-width: 750px;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .cookie-accept-block__btn {
+    margin: 0;
+    width: 150px;
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .ga-scroll-top-btn {
+    right: 0;
+  }
+}
